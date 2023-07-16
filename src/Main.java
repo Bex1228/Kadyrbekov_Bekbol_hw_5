@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-       Boss boss = new Boss(800, 150, "Armor");
+       Boss boss = new Boss(800, 150, "Armor");                  //создаем босса
         System.out.println(" BOSS in :");
         System.out.println("HEALTH: " + boss.getHealth() + " DAMAGE: " + boss.getDamage()
               + " PROTECTION TYPE: " + boss.getProtectionType());
@@ -9,7 +9,7 @@ public class Main {
 
 
 
-        Hero[] heroes = createHeroes();
+        Hero[] heroes = createHeroes();                //выводим информацию  массива через  цикл
         System.out.println("Heroes Information:");
         for (int i = 0; i < heroes.length; i++) {
             System.out.println("Hero " + (i+1) + ":");
@@ -19,7 +19,7 @@ public class Main {
             System.out.println();
         }
     }
-    public static Hero[] createHeroes() {
+    public static Hero[] createHeroes() {    //создаем массив с героями
         Hero hero1 = new Hero(300, 40, "Flying");
         Hero hero2 = new Hero(280, 70);
         Hero hero3 = new Hero(320, 50, "Invisibility");
